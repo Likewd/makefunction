@@ -6,16 +6,17 @@
     <title>Document</title>
 </head>
 <body>
-    <h1 id="number">0</h1>
-    <button >clcik me</button>
+    <h1 id="number">0</h1> //this is container which increase when u click button 
+    <button >clcik me</button>//this is button  
 </body>
 <script>
-var number =document.querySelector("#number");
-var btn =document.querySelector("button");
-var counter=0;
+var number =document.querySelector("#number"); //varibale which reference <h1>
+var btn =document.querySelector("button"); //varibale which reference <Button>
+var counter=0; //variable 
+//  CLick event when u click on button then this part of the program run
 btn.addEventListener("click",function(){  
-counter++;
-number.innerHTML = counter;
+counter++;//increase the vaue of counter varialbe , simple syntax counte = counte+1;
+number.innerHTML = counter;//insert updated value of variable of counter in <h1> 
 })
 </script>
 </html>
